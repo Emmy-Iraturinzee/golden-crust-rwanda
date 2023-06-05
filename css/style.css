@@ -405,6 +405,9 @@ body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; 
     display: none;
 }
 
+a{
+    color: #6e726e !important;
+}
 
 /*** Service ***/
 .service-item {
