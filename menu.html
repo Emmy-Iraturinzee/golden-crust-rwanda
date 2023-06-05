@@ -251,10 +251,10 @@
                  
                     <div class="row g-4">
                         
-                        <a href="https://wa.me/+25079864547">
+                        <a id=waButton target="blank"  href="">
                         <div class="col-lg-6">
                             <div class="d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded" src="img/spanishomelert.jpg" alt="" style="width: 80px;">
+                                <img class="flex-shrink-0 img-fluid rounded" id=image src="https://ucarecdn.com/60859327-2ed3-4370-b8ac-def5eaa17026/" alt="" style="width: 80px;">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <h5 class="d-flex justify-content-between border-bottom pb-2">
                                         <span>Spanish Omelet</span>
@@ -376,16 +376,19 @@
                         
                         <div class="row g-4">
                             <div class="col-lg-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid rounded" src="img/margarita.jpeg" alt="" style="width: 80px;">
-                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                            <span>Classic Margarita</span>
-                                            <span class="text-primary">6,900frw</span>
-                                        </h5>
-                                        <small class="fst-italic">Mozzarella,classic red sauce, sliced tomatoes, fresh basil and olive oil drizzle.</small>
+                                <a href="whatsapp://send?text=" title="Share On Whatsapp" onclick="window.open('whatsapp://send?text=%20Take%20a%20look%20at%20this%20awesome%20page%20-%20' + encodeURIComponent(document.URL)); return false;">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/margarita.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Classic Margarita</span>
+                                                <span class="text-primary">6,900frw</span>
+                                            </h5>
+                                            <small class="fst-italic">Mozzarella,classic red sauce, sliced tomatoes, fresh basil and olive oil drizzle.</small>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
+                                
                             </div>
                             <div class="col-lg-6">
                                 <div class="d-flex align-items-center">
@@ -565,14 +568,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-        const button = document.getElementById('waButton');
-let image = document.getElementById('image');
-let imageURL = image.src;
-
-// let sharehref = `whatsapp://send?text=${encodeURIComponent(imageSrc)}`;
-
-button.setAttribute('href', 'https://wa.me/+250798654547?text='+encodeURIComponent(imageURL));
-
+       
     </script>
 </body>
 
