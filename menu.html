@@ -8,6 +8,11 @@
     <meta content="" name="keywords">
     <meta content="Kigali pizza place" name="description">
 
+    <meta property="og:title" content="Golden crust" />
+<meta property="og:description" content="Place of delicious pizza" />
+<meta property="og:url" content="https://ucarecdn.com/77ea5420-5913-4165-9892-dd3b10a1eda3/" />
+<meta property="og:image" content="https://ucarecdn.com/77ea5420-5913-4165-9892-dd3b10a1eda3/" />
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -374,9 +379,9 @@
                         
                         <div class="row g-4">
                             <div class="col-lg-6">
-                                <a href="https://wa.me/250782251506/?text=" title="Share On Whatsapp" onclick="window.open('https://wa.me/250782251506/?text=%20Take%20a%20look%20at%20this%20awesome%20page%20-%20' + encodeURIComponent(document.URL)); return false;">
+                                <a id=waButton href="https://wa.me/250782251506/?text=" title="Share On Whatsapp" onclick="window.open('https://wa.me/250782251506/?text=%20Take%20a%20look%20at%20this%20awesome%20page%20-%20' + encodeURIComponent(document.URL)); return false;">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/margarita.jpeg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://ucarecdn.com/0a85f08b-9513-4b3c-814f-5dd9825fbba5/" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Classic Margarita</span>
@@ -566,7 +571,13 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-       
+   const button = document.getElementsByTagName("a");
+let image = document.getElementById('image');
+let imageURL = image.src;
+
+// let sharehref = `whatsapp://send?text=${encodeURIComponent(imageSrc)}`;
+
+button.setAttribute('href', 'whatsapp://send?text='+encodeURIComponent(imageURL));    
     </script>
 </body>
 
