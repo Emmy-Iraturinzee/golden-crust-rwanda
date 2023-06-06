@@ -1036,8 +1036,7 @@ a{
     background-color:  #FEA116;
     border: none;
     color: #fff;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    
    
     cursor: pointer;
     outline: none;
@@ -1058,3 +1057,8 @@ a{
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   }
+
+  /* signIn */
+
+  
+  

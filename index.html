@@ -88,23 +88,29 @@
                        
                         <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
                         <a href="contact.html" class="nav-item nav-link">Deals</a>
-                        <a href="contact.html" class="nav-item nav-link">Phone sign-In</a>
-                        <a href="contact.html" class="nav-item nav-link">Loyality program</a>
+                        <div class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                          <div class="dropdown-menu m-0">
+                              <a href="booking.html" class="dropdown-item">Booking</a>
+                              <a href="signin.html" class="dropdown-item">Phone sign-In</a>
+                              <a href="testimonial.html" class="dropdown-item">Loyality program</a>
+                          </div>
+                      </div>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
                       
                         <a href="https://wa.me/+25079864547"  target="_blank" class="nav-item nav-link"><img src="img/whatsapp (1).png" style="width: 20px;"></a>
 
                     </div>
-                    <a href="https://wa.me/+250798654547?text=Hello! I would like to order from you" target="blank"class="nav-item nav-link btn btn-primary">Order Now</a>
+                    <a id=waButton href="https://wa.me/+250798654547?text=Hello! I would like to order from you" target="blank"class="nav-item nav-link btn btn-primary">Order Now</a>
                    
                 </div>
             </nav>
 
-            <div class="container-xxl py-5 bg-dark hero-header" style="max-height: auto;">
-                <div class="container my-5 py-5">
+            <div class="container-xxl py-5 bg-dark hero-header" style="max-height: auto">
+                <div class="container my-5 py-5" >
               
-                    <div class="row align-items-center g-5 mt-1">
+                    <div class="row align-items-center g-5 " style="margin-top: -50px;" >
                         <div class="col-lg-4 text-center text-lg-start" >
                             <section class="section">
                                 <div class="container">
@@ -114,20 +120,21 @@
                                 </div>
                               </section>
                               <article class="card">
-                                <img class="card__image mt-5" src="img/roSTED.png" style="width: 700px;">
+                                <img class="card__image" src="img/pizzafinal.png" />
                                 <div class="card__data">
                                   <div class="card__info">
-                                    <h2>Chicken leg</h2>
-                                    <p>Seasoned chips,Chicken drumsticks,tomatoes,lettuce and red onions</p>
+                                    <h2>Pizza</h2>
+                                    <p>Mozzarella,classic red sauce,sliced tomatoes,fresh basil and oil drizzle</p>
+
                                   </div>
-                                  <h3 class="card__price">RWF 5000</h3>
+                                  <h3 class="card__price">RWF 6500</h3>
                                   <a href="#">
                                     <button class="card__add">Order Now</button>
                                   </a>
                                 </div>
                               </article>
                         </div>
-                        <div class="col-lg-4 text-center text-lg-start" >
+                        <div class="col-lg-4 text-center text-lg-start"  >
                             <article class="card">
                                 <img class="card__image" src="img/load.png" />
                                 <div class="card__data">
@@ -142,16 +149,15 @@
                                 </div>
                               </article>
                         </div>
-                        
                         <div class="col-lg-4 text-center text-lg-start" >
                             <article class="card">
-                                <img class="card__image" src="img/pizzafinal.png" />
+                              <img class="card__image mt-5" src="img/roSTED.png" style="width: 700px;">
                                 <div class="card__data">
                                   <div class="card__info">
-                                    <h2>Pizza</h2>
+                                    <h2>Chicken leg</h2>
                                     <p>Mozzarella,classic red sauce,sliced tomatoes,fresh basil and oil drizzle</p>
                                   </div>
-                                  <h3 class="card__price">RWF 6500</h3>
+                                  <h3 class="card__price">RWF 5000</h3>
                                   <a href="#">
                                     <button class="card__add">Order Now</button>
                                   </a>
@@ -213,8 +219,16 @@
 
     <!-- Template Javascript -->
     <script>
-        var myModal = new bootstrap.Modal(document.getElementById(''), {})
-        myModal.show()
+        const button = document.getElementById('waButton');
+let image = document.getElementById('image');
+let imageURL = image.src;
+
+// let sharehref = `whatsapp://send?text=${encodeURIComponent(imageSrc)}`;
+
+button.setAttribute('href', 'https://wa.me/250782251506/?text='+encodeURIComponent(imageURL));
+
+//button.setAttribute('href', sharehref);
+//console.log(button);
         </script>
     <script src="js/main.js"></script>
 </body>
