@@ -300,6 +300,10 @@
 .btn{
   border: none;
 }
+.imag-rot{
+  animation: imgRotate 50s linear infinite;
+
+}
 .product-content .price{
   text-decoration: none !important;
   color: #f4f4f4 !important;
