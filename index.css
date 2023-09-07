@@ -304,6 +304,11 @@
   animation: imgRotate 50s linear infinite;
 
 }
+.order-btn{
+  background-color: #ffa011!important;
+
+}
+
 .product-content .price{
   text-decoration: none !important;
   color: #f4f4f4 !important;
